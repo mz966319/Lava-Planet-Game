@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyRange : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    private void OnTriggerEnter(Collider other) // player opject entered the enemy area
+    {
+        if (other.tag.Equals("Player"))
+        {
+            FindObjectOfType<EnemyAI>().ActivateEnemy();
+            Destroy(gameObject); //remove the enemy area
+
+        }
+    }
+}
