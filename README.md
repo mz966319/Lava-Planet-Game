@@ -1,3 +1,4 @@
+#Lava Planet Game
 List of features:
 
 - The player can collect fuel cells through out the levels to be able to fly thier ship and they can keep track of the number of cells they collected
